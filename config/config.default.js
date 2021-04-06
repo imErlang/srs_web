@@ -21,6 +21,12 @@ module.exports = appInfo => {
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
   };
 
+  config.security = {
+    csrf: {
+      enable: false,
+    },
+  };
+
   // add your middleware config here
   config.middleware = [];
 
